@@ -68,6 +68,7 @@ Primero veamos la función de recursividad que resuelve el problema. Sea $f(n)$ 
 - Intentaremos hacer los tres cortes y ahora hay que seguir cortando el listón con el tamaño que nos quedó, y al final quedarnos con la opción que maximice el número de listones obtenidos.
 
 $$
+\begin{align*}
 f(n) &= \begin{cases}
 1 + \max(f(n-a), f(n-b), f(n-c)) & \mbox{si $n \geq a$, $n \geq b$ o $n \geq c$} \\
 0 & \mbox{si $n=0$} \\
