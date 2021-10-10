@@ -26,7 +26,7 @@ Así como está programada la función recursiva, tiene una complejidad exponenc
 ![](https://i.imgur.com/B26mqzr.png)
 Vemos que el valor de $f(3)$ se calculó dos veces. Entonces, la forma de solucionar esto va a ser guardar las respuestas de subproblemas que ya tenemos.
 
-```c++
+```cpp
 vector<int> mem(100, -1); // Inicializa un arreglo de tamaño 100 con todas sus entradas igual a -1
 
 int f(int n){
