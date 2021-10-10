@@ -15,7 +15,7 @@ Para resolver un problema con DP, necesitamos conocer algunas propiedades:
 - **Subestructura óptima:** la solución óptima de un problema puede obtenerse a través de las soluciones óptimas de sus subproblemas. Por ejemplo, en el problema del camino más corto en grafos.
 
 Por ejemplo: sea $f_0=0$, $f_1=1$ y $f_n=f_{n-1}+f_{n-2}$ para $n \geq 2$. Para programar esta función directamente, tendríamos que:
-```c++
+```cpp
 int f(int n){
 	if(n == 0) return 0;
 	if(n == 1) return 1;
